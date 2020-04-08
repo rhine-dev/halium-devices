@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="kd" fetch="git://github.com/konradybcio" />
+    <remote name="rd" fetch="git://github.com/rhine-dev" />
     <remote name="beidl" fetch="git://github.com/fredldotme" />
     <remote name="sony" fetch="git://github.com/sonyxperiadev" />
     <remote name="nxp" fetch="git://github.com/NXPNFCProject/" />
@@ -14,13 +14,13 @@
 
     <project path="halium/libhybris" name="libhybris" remote="ubp" revision="hybris-compat-layer-fixes" />
     
-    <project path="device/sony/honami" name="device-sony-honami" revision="ubports" remote="kd" />
-    <project path="device/sony/rhine" name="device-sony-rhine" revision="ubports" remote="kd" />
-    <project path="device/sony/common" name="device-sony-common" revision="ubports" remote="kd" />
+    <project path="device/sony/honami" name="device-sony-honami" revision="ubports" remote="rd" />
+    <project path="device/sony/rhine" name="device-sony-rhine" revision="ubports" remote="rd" />
+    <project path="device/sony/common" name="device-sony-common" revision="ubports" remote="rd" />
     <project path="device/sony/common-headers" name="device-sony-common-headers" revision="aosp/LA.BR.1.3.3_rb2.14" remote="sony" />
     <project path="device/sony/common-init" name="device-sony-common-init" revision="n-mr1" remote="sony" />
     
-    <project path="kernel/sony/honami" name="kernel" revision="ubp-7.1" remote="kd" />
+    <project path="kernel/sony/honami" name="kernel" revision="ubp-7.1" remote="rd" />
     <project path="device/sony/sepolicy" name="device-sony-sepolicy" revision="n-mr1" remote="sony" />
     
     <project path="external/elfutils" name="android_external_elfutils" groups="pdk" revision="cm-14.1" remote="los" />
@@ -43,4 +43,7 @@
     <project path="vendor/oss/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
     <project path="vendor/oss/timekeep" name="timekeep" groups="device" remote="sony" revision="master" />
     <project path="vendor/oss/json-c" name="json-c" groups="device" remote="sony" revision="master" />
+
+    <project path="vendor/qcom/prebuilt" name="proprietary-vendor-qcom" groups="device" remote="rd" revision="master" />
+    <project path="vendor/sony" name="proprietary-vendor-sony" groups="device" remote="rd" revision="master" />
 </manifest>
